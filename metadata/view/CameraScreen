@@ -1,0 +1,108 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CameraScreen",
+        "designer|userAlias": "cameraScreen",
+        "requires": [
+            "Ext.device.Camera"
+        ]
+    },
+    "designerId": "cc628b45-8973-4de9-8cfd-f940415a197e",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Camera"
+            },
+            "designerId": "2684c3f2-051b-4ccf-acd6-f0a231e83dfc",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "backBut",
+                        "itemId": "mybutton4",
+                        "ui": "back",
+                        "text": "Back"
+                    },
+                    "designerId": "1395c6f8-5d06-4439-80c5-309aff04fb5b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "margin": "20 10 10 10"
+            },
+            "designerId": "c670956c-db04-47fc-8e81-999f40c4d575",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "fromCameraBut",
+                        "itemId": "mybutton9",
+                        "margin": 20,
+                        "text": "Camera"
+                    },
+                    "designerId": "b48c6da9-d04f-423a-9258-846df9a04d4f"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "fromFileBut",
+                        "itemId": "mybutton10",
+                        "margin": 20,
+                        "text": "File"
+                    },
+                    "designerId": "b8a24035-029f-4400-8901-9f753fe651a5"
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 201,
+                        "id": "testImg",
+                        "margin": 20,
+                        "ui": "",
+                        "width": 200
+                    },
+                    "designerId": "1d3c3e5c-414e-40ba-9401-66d741b5c622"
+                }
+            ]
+        }
+    ]
+}

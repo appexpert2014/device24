@@ -1,0 +1,276 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "DeviceController",
+        "requires": [
+            "Ext.device.Connection",
+            "Ext.device.Contacts",
+            "Ext.device.Camera",
+            "Ext.device.Geolocation"
+        ]
+    },
+    "designerId": "99050c6d-b4ad-40a8-a938-4dd83dc15bdd",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContButTap",
+                "implHandler": [
+                    "Ext.Viewport.setActiveItem('contactsScreen');\r",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#contBut"
+            },
+            "designerId": "443f2523-1e37-4b32-b0f7-8e176c807d2e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onCamButTap",
+                "implHandler": [
+                    "Ext.Viewport.setActiveItem('cameraScreen');\r",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#camBut"
+            },
+            "designerId": "c65c8fa6-8ae0-4312-bd02-38b6a9f33c01"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onConButTap",
+                "implHandler": [
+                    "Ext.Viewport.setActiveItem('connectionScreen');\r",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#conBut"
+            },
+            "designerId": "4babf97c-65e0-46d2-b280-74e78040cc21"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onGeoButTap",
+                "implHandler": [
+                    "Ext.Viewport.setActiveItem('geoScreen');\r",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#geoBut"
+            },
+            "designerId": "60a17423-14c5-4b94-a8f0-f063eb0a2047"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBackBut3Tap",
+                "implHandler": [
+                    "//Ext.Viewport.remove(Ext.Viewport.getActiveItem(), true);\r",
+                    "Ext.Viewport.setActiveItem('mainScreen');"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#backBut3"
+            },
+            "designerId": "58b5f52b-777c-4d47-a5e3-566a736f1519"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBackButTap",
+                "implHandler": [
+                    "//Ext.Viewport.remove(Ext.Viewport.getActiveItem(), true);\r",
+                    "Ext.Viewport.setActiveItem('mainScreen');"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#backBut"
+            },
+            "designerId": "9d543dd2-7d1d-4fb8-b536-32ec164f3c65"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFromCameraButTap",
+                "implHandler": [
+                    "Ext.device.Camera.capture({\r",
+                    "    success: function(image) {\r",
+                    "        var imageView = Ext.getCmp('testImg');\r",
+                    "         imageView.setSrc(image);\r",
+                    "    },\r",
+                    "    quality: 75,\r",
+                    "    width: 200,\r",
+                    "    height: 200,\r",
+                    "    destination: 'data'\r",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#fromCameraBut"
+            },
+            "designerId": "1d695755-408d-4381-9820-0300ba1f5289"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFromFileButTap",
+                "implHandler": [
+                    "Ext.device.Camera.capture({\r",
+                    "    \r",
+                    "    success: function(image) {\r",
+                    "        //  var imgSrc = 'data:image/jpeg;base64,'.concat(image);\r",
+                    "          var imageView = Ext.getCmp('testImg');\r",
+                    "         imageView.setSrc(image);\r",
+                    "        \r",
+                    "    },\r",
+                    "    quality: 75,\r",
+                    "    width: 200,\r",
+                    "    height: 200,\r",
+                    "    source: 'library',\r",
+                    "    destination: 'file'\r",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#fromFileBut"
+            },
+            "designerId": "fa9af7f2-92e7-4636-8d25-abe0e73f6d88"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBackBut1Tap",
+                "implHandler": [
+                    "//Ext.Viewport.remove(Ext.Viewport.getActiveItem(), true);\r",
+                    "Ext.Viewport.setActiveItem('mainScreen');"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#backBut1"
+            },
+            "designerId": "a2cb440f-b66b-43c4-9bfd-ae782947ca50"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBackBut4Tap",
+                "implHandler": [
+                    "//Ext.Viewport.remove(Ext.Viewport.getActiveItem(), true);\r",
+                    "Ext.Viewport.setActiveItem('mainScreen');"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#backBut4"
+            },
+            "designerId": "aea6b158-5a62-43cf-b229-d18d277dd6a5"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onConStatusButTap",
+                "implHandler": [
+                    "alert('Your connection type is: ' + Ext.device.Connection.getType());"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#conStatusBut"
+            },
+            "designerId": "7ff614f9-16db-4e6f-b518-7350efec17ae"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onGeoStatusButTap",
+                "implHandler": [
+                    "Ext.device.Geolocation.getCurrentPosition({\r",
+                    "    success: function(position) {\r",
+                    "        console.log(position.coords);\r",
+                    "         Ext.Msg.alert('Geolocation', ''+position.coords);\r",
+                    "    },\r",
+                    "    failure: function() {\r",
+                    "        Ext.Msg.alert('Geolocation', 'Something went wrong!');\r",
+                    "    }\r",
+                    "});\r",
+                    "\r",
+                    "//alert('Your connection type is: ' + Ext.device.Connection.getType());"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#geoStatusBut"
+            },
+            "designerId": "e946b23c-354e-46eb-8cdd-22a245161a29"
+        }
+    ]
+}

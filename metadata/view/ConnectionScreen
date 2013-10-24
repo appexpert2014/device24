@@ -1,0 +1,63 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ConnectionScreen",
+        "designer|userAlias": "connectionScreen",
+        "requires": [
+            "Ext.device.Connection"
+        ]
+    },
+    "designerId": "c5838101-2ddf-4161-ade7-b17fe5999fec",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Connection"
+            },
+            "designerId": "7ed3d3f9-3919-4f30-890b-3598712f998c",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "backBut1",
+                        "itemId": "mybutton5",
+                        "ui": "back",
+                        "text": "Back"
+                    },
+                    "designerId": "b5b66102-2161-4ad5-90a1-e0e55a093bc4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "conStatusBut",
+                "itemId": "mybutton11",
+                "margin": "40 20 20 20",
+                "text": "Connection Status"
+            },
+            "designerId": "02f053f2-6b18-4354-8291-90dd2763acb0"
+        }
+    ]
+}

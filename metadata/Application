@@ -1,0 +1,22 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "MainScreen",
+            "ContactsScreen",
+            "CameraScreen",
+            "ConnectionScreen",
+            "GeoScreen"
+        ],
+        "controllers": [
+            "DeviceController"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}

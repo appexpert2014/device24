@@ -1,0 +1,48 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ContactsScreen",
+        "designer|userAlias": "contactsScreen",
+        "requires": [
+            "Ext.device.Contacts"
+        ]
+    },
+    "designerId": "476544b9-e829-40c1-b2aa-edc476c66d31",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Contacts"
+            },
+            "designerId": "edaa8134-9aa7-44c5-8020-3604a38e31c2",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "backBut3",
+                        "itemId": "mybutton7",
+                        "ui": "back",
+                        "text": "Back"
+                    },
+                    "designerId": "6e216e43-2b80-4239-b6a7-49b32b5f3e52"
+                }
+            ]
+        }
+    ]
+}

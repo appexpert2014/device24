@@ -1,0 +1,63 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GeoScreen",
+        "designer|userAlias": "geoScreen",
+        "requires": [
+            "Ext.device.Geolocation"
+        ]
+    },
+    "designerId": "1898cba4-d233-4211-bfde-38f280b95c75",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "GeoLocation"
+            },
+            "designerId": "2ae9714c-8fdd-4be2-927a-cebc4fc39589",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "backBut4",
+                        "itemId": "mybutton8",
+                        "ui": "back",
+                        "text": "Back"
+                    },
+                    "designerId": "8c723385-794a-431e-8945-080ef943a0c0"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "geoStatusBut",
+                "itemId": "mybutton12",
+                "margin": "40 20 20 20",
+                "text": "Location"
+            },
+            "designerId": "5c702288-2967-415c-9d62-6b4f3c379019"
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainScreen",
+        "designer|userAlias": "mainScreen",
+        "designer|initialView": true
+    },
+    "designerId": "71fd7135-b460-48e0-a3be-b8a8b190349c",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Device Native Demo"
+            },
+            "designerId": "5842aa9d-a4da-4358-bea9-f10a585a276f"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "margin": "60 20 20 20"
+            },
+            "designerId": "891cc93a-5854-403e-9f61-3ca907a35a74",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "contBut",
+                        "itemId": "mybutton3",
+                        "margin": 20,
+                        "designer|displayName": "",
+                        "text": "Contacts"
+                    },
+                    "designerId": "0574408c-4cd4-4b9e-9bfb-47e8ab1c791f"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "camBut",
+                        "itemId": "mybutton2",
+                        "margin": 20,
+                        "text": "Camera"
+                    },
+                    "designerId": "c8f0f7ac-21ce-4731-831b-b65aa9211aa3"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "conBut",
+                        "itemId": "mybutton1",
+                        "margin": 20,
+                        "text": "Connection"
+                    },
+                    "designerId": "0b32ee14-88df-4857-aeae-837fa83c93bc"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "geoBut",
+                        "itemId": "mybutton",
+                        "margin": 20,
+                        "text": "GeoLocation"
+                    },
+                    "designerId": "d08f4472-aa38-4644-b835-247443236124"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "name": "DeviceDemo",
+    "settings": {
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "",
+        "exportPath": ""
+    },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 1130,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "viewOrderMap": {
+        "view": [
+            "71fd7135-b460-48e0-a3be-b8a8b190349c",
+            "476544b9-e829-40c1-b2aa-edc476c66d31",
+            "cc628b45-8973-4de9-8cfd-f940415a197e",
+            "c5838101-2ddf-4161-ade7-b17fe5999fec",
+            "1898cba4-d233-4211-bfde-38f280b95c75"
+        ],
+        "store": [],
+        "controller": [
+            "99050c6d-b4ad-40a8-a938-4dd83dc15bdd"
+        ],
+        "model": [],
+        "resource": [
+            "caaf12ca-19fb-487d-a7a0-5977f611c12d",
+            "3ba9c0d1-0578-449a-bcbc-48496c374c5c"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
