@@ -135,11 +135,9 @@ Ext.define('MyApp.controller.DeviceController', {
     },
 
     onConStatusButTap: function(button, e, eOpts) {
-<<<<<<< HEAD
-alert('Your connection type is: ' + Ext.device.Connection.getType());
-=======
+
         alert('Your connection type is: ' + Ext.device.Connection.getType());
->>>>>>> change
+
     },
 
     onGeoStatusButTap: function(button, e, eOpts) {
